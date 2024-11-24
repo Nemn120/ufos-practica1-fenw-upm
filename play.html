@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MIW FENW</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="imgs/upm_escudo.png" alt="" width="60" height="45" class="d-inline-block align-text-center">
+                FENWM
+            </a>
+            <div class="collapse navbar-collapse d-flex flex-grow-1" id="navbarNav">
+                <div class="navbar-nav me-auto">
+                  <a class="nav-link" aria-current="page" href="index.html">
+                    <i class="fas fa-home"></i> Home
+                  </a>
+                  <a class="nav-link" href="preferences.html">
+                    <i class="fas fa-cog"></i> Preferences
+                  </a>
+                  <a class="nav-link" href="play.html">
+                    <i class="fa-solid fa-play"></i> Play
+                  </a>
+                  <a class="nav-link" href="records.html">
+                    <i class="fa-regular fa-clipboard"></i> Records
+                  </a>
+                </div>
+                <div class="navbar-nav">
+                  <a class="nav-link" href="login.html">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                  </a>
+                  <a class="nav-link" href="register.html">
+                    <i class="fa-solid fa-user"></i> Register
+                  </a>
+                </div>
+              </div>
+        </div>
+    </nav>
+
+    <div id="resultsPanel" class="modal fade" tabindex="-1" aria-labelledby="resultsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="resultsModalLabel">Resultados del Juego</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p id="finalScore"></p>
+              <p id="scoreMessage"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <img id='missile' src='imgs/missile.png' STYLE="left:300px;bottom:10px;height:70px;width:40px; z-index: 10;" />
+    <div id="pointsContainer" class="position-fixed bottom-0 end-0 bg-light border rounded p-2 m-3 text-end shadow-sm" style="width: 100px;">
+        <h5 id="points" class="text-primary mb-1">0</h5>
+        <p id="timeText" class="text-muted small mb-1">Tiempo: <span id="timerDisplay">60</span>s</p>
+    </div>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src='js/play.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+   /* Fondo de naves espaciales */
+   .container-sm {
+    position: relative;
+    background-size: 150px 300px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin: 50px !important;
+  }
+  /* Card personalizado */
+  .side-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  .card-title {
+    font-family: 'Orbitron', sans-serif; /* Fuente futurista */
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .card-text {
+    font-size: 1rem;
+  }
+ 
+  body {
+    background: url('imgs/fondo2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+  }
+
+  .container-full-height {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+  }
+  .card {
+    background-color: #E9E9E9 !important;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .input-flex{
+    display: flex;
+
+  }
+  .form-control{
+    width: 50% !important;
+    margin-top: 5px;
+  }
+
+  .button{
+    width: 100%;
+
+  }
+
+  .card {
+    max-width: 1000px; /* Ajusta el ancho máximo del card */
+    margin: 0 auto; /* Centra el card horizontalmente */
+  }
+
+  #missile {
+    position: absolute;
+    bottom: 10px;
+    left: 300px;
+    height: 70px;
+}
+
+#ufo {
+    position: absolute;
+    bottom: 375px;
+    left: 0px;
+}
